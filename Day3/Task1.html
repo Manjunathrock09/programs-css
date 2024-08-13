@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ece5dd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat1 {
+            width: 400px;
+            height: 600px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .chat2 {
+            background-color: #075E54;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .chat3 {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message {
+            max-width: 70%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            position: relative;
+            word-wrap: break-word;
+        }
+
+        .message.sent {
+            background-color: #838c7c;
+            align-self: flex-end;
+            border-bottom-right-radius: 0;
+        }
+
+        .message.received {
+            background-color: #ffffff;
+            align-self: flex-start;
+            border-bottom-left-radius: 0;
+            border: 1px solid #f5eded;
+        }
+
+        .time {
+            font-size: 11px;
+            color: #f5f0f0;
+            position: absolute;
+            bottom: -15px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat1">
+        <div class="chat2">
+            WhatsApp Chat
+        </div>
+        <div class="chat3">
+            <div class="message received">
+                Hi, bro.
+                <span class="time">10:01 AM</span>
+            </div>
+            <div class="message sent">
+                Hi bro
+                <span class="time">10:02 AM</span>
+            </div>
+            <div class="message received">
+                where are you ?
+            <span class="time">10:03 AM</span>
+            </div>
+            <div class="message sent">
+                Bangalore
+                <span class="time">10:04 AM</span>
+            </div>
+            <div class="message received">
+                Ok
+                <span class="time">10:05 AM</span>
+            </div>
+            <div class="message sent">
+                you where are you?
+                <span class="time">10:06 AM</span>
+            </div>
+            <div class="message received">
+                Hyderabad
+            <span class="time">10:07 AM</span>
+            </div>
+            <div class="message received">
+                Hey what to share some news important
+            <span class="time">10:08 AM</span>
+            </div>
+            <div class="message sent">
+                what?
+             <span class="time">10:08 AM</span>
+            </div>
+            <div class="message received">
+                She said Yes
+            <span class="time">10:09 AM</span>
+            </div>
+            <div class="message sent">
+                Ohh congrations bro
+            <span class="time">10:09 AM</span>
+            </div>
+            <div class="message received">
+                My wedding is 
+            <span class="time">10:10 AM</span>
+            </div>
+            <div class="message received">
+            On August 14th We need come bro   
+            <span class="time">10:10 AM</span>
+            </div>
+            <div class="message sent">
+                Sure bro
+            <span class="time">10:11 AM</span>
+            </div>
+            <div class="message sent">
+                 Bro where is Party?
+            <span class="time">10:11 AM</span>
+            </div>
+            <div class="message received">
+                Come here bacholor party is there bro
+            <span class="time">10:12AM</span>
+            </div>
+            <div class="message sent">
+                Ok bro 
+            <span class="time">10:13AM</span>
+            </div>
+            <div class="message received">
+                Hey what about your life?
+            <span class="time">10:14AM</span>
+            </div>
+            <div class="message sent">
+                I am Good
+            <span class="time">10:15AM</span>
+            </div>
+            <div class="message received">
+                When  is your marriage 
+            <span class="time">10:16AM</span>
+            </div>
+            <div class="message sent">
+                Ok.
+            <span class="time">10:16AM</span>
+            </div>
+            <div class="message sent">
+                Ok see you later i need go to office getting late
+            <span class="time">10:17AM</span>
+            </div>
+            <div class="message received">
+                ok see you in the wedding
+             <span class="time">10:18AM</span>   
+            </div>
+           </div>          
+        </div>
+    </div>
+</body>
+</html>
