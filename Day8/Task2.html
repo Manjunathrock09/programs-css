@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<style>
+  .top{
+            width:100;
+            height: 6vh;
+            align-self: auto;
+            background-color: white;
+            position: sticky;
+            top: 0%;
+            z-index: 1;
+
+        }
+        .button{
+            color:black;
+            padding: 10px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+        .button:hover{
+            background-color:rgb(205, 193, 193);
+        }
+    .main{
+        background-image: url(https://www.w3schools.com/w3images/architect.jpg);
+        background-size: cover;
+        height: 150vh;
+        width: 100vw;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    h2{     
+            padding: 10px 25px;
+            border: none;
+            outline: 0;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black; 
+            font-size: 24px; 
+            text-align: center;
+    }
+    .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    padding:10px;
+}
+
+.image-container {
+    width: 370px;  
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}
+
+.summer-house {
+    background-image: url('https://www.w3schools.com/w3images/house5.jpg'); 
+}
+
+.brick-house {
+    background-image: url('https://www.w3schools.com/w3images/house2.jpg'); 
+}
+
+.renovated {
+    background-image: url('https://www.w3schools.com/w3images/house3.jpg'); 
+}
+
+.barn-house {
+    background-image: url('https://www.w3schools.com/w3images/house4.jpg'); 
+}
+
+    h1{
+        height:150px;
+        width: 600px;
+        padding: 10px 25px;
+        border: none;
+        outline: 0;
+        color: black; 
+        font-size: 24px; 
+    }
+    
+</style>
+<body>
+  <div class="top">
+    <div class="card">
+      <a href="#home" class="button" style="float: left;"><b>BR</b> Architects</a>
+      <div class="small" style="float:right">
+        <a href="#projects" class="button">Projects</a>
+        <a href="#about" class="button">About</a>
+        <a href="#contact" class="button">Contact</a>
+      </div>
+    </div>
+  </div>
+    <div class="main">
+        <h2>BR Architects</h1>
+    </div>
+    <div class="image-grid">
+        <div class="image-container summer-house">
+          <h1>summer-house</h1>
+        </div>
+        <div class="image-container brick-house">
+          <h1>brick-house</h1>
+        </div>
+        <div class="image-container renovated">
+          <h1>renovated</h1>
+        </div>
+        <div class="image-container barn-house">
+          <h1>barn-house</h1>
+        </div>
+        <div class="image-container summer-house">
+          <h1>summer-house</h1>
+        </div>
+        <div class="image-container brick-house">
+          <h1>brick-house</h1>
+        </div>
+        <div class="image-container renovated">
+          <h1>renovated</h1>
+        </div>
+        <div class="image-container barn-house">
+          <h1>barn-house</h1>
+        </div>
+    </div>  
+  </div>
+    </body>
+</html>
