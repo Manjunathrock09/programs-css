@@ -5,10 +5,46 @@
     <title>title</title>
 </head>
 <style>
-    .about-catering {
+    .home{
+    background-image: url(https://www.w3schools.com/w3images/hamburger.jpg);
+       background-size: cover;
+        height: 90vh;;
+        width: 100vw;
+        padding: 20px;
+        box-sizing: border-box;
+        align-items: flex-end;
+        display: flex;
+}
+h2{
+    display: flex;
+}
+.top{
+            width:100;
+            height: 6vh;
+            align-self: auto;
+            background-color: white;
+            position: sticky;
+            top: 0%;
+            z-index: 1;
+
+        }
+        .button{
+            color:rgba(29, 25, 25, 0.73);
+            padding: 10px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+        .button:hover{
+            background-color:rgb(205, 193, 193);
+        }
+        .about-catering {
   display: flex;
   align-items: center;
    padding: 10px;
+   margin-top: 20px;
 }
 
 .image-container {
@@ -49,7 +85,6 @@ p {
     max-width: 100%;
     height: auto;
 }
-
 .content {
     padding:50px;
     margin-left: -100px;
@@ -126,21 +161,24 @@ a{
 }
 </style>
 <body>
-    <div class="navbar">
-        <a href="#home"style="float: left;"><b>GOURMET</button></a> 
-        <div class="main" style="float: right;">
-            <a href="#about">About</a>&nbsp;
-            <a href="#menu">Menu</a>&nbsp;
-            <a href="#contact">Contact</a>&nbsp;
-            </div>
+    
+    <div class="top">
+        <div class="card">
+          <a href="#home" class="button" style="float: left;">Gourmet au Cater</a>
+          <div class="small" style="float:right">
+            <a href="#about" class="button">About</a>
+            <a href="#menu" class="button">Menu</a>
+            <a href="#contact" class="button">Contact</a>
+          </div>
         </div>
+      </div>
+      <div class="home">
+        <h2 style="color: rgba(175, 184, 186, 0.767);">Le Catering</h2>
     </div>
-    <div id="home">
-        <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="">
-    </div>
-<section class="about-catering">
+    <section class="about-catering">
         <div class="image-container" id="about">
-            <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="Catering Image" height="400px" width="400px"> </div>
+            <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="Catering Image" height="400px" width="400px"> 
+        </div>
         <div class="content">
             <h2>About Catering</h2>
             <p>Tradition since 1889</p>
@@ -202,5 +240,5 @@ a{
     <footer>
         <p style="text-align: center;">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
     </footer>
-</body>
+    </body>
 </html>
