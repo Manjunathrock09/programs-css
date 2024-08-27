@@ -3,109 +3,164 @@
 <head>
     <meta charset="UTF-8" />
     <title>title</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        
-        .navbar {
-            background-color:white;
-            overflow: hidden;
-        }
+</head>
+<style>
+    .home{
+    background-image: url(https://www.w3schools.com/w3images/hamburger.jpg);
+       background-size: cover;
+        height: 90vh;;
+        width: 100vw;
+        padding: 20px;
+        box-sizing: border-box;
+        align-items: flex-end;
+        display: flex;
+}
+h2{
+    display: flex;
+}
+.top{
+            width:100;
+            height: 6vh;
+            align-self: auto;
+            background-color: white;
+            position: sticky;
+            top: 0%;
+            z-index: 1;
 
-        .navbar a {
-            float: left;
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
+        }
+        .button{
+            color:rgba(29, 25, 25, 0.73);
+            padding: 10px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
             text-decoration: none;
-            font-size: 17px;
+            position: relative;
+            top: 10px;
+            left: 20px;
         }
-
-        .navbar .main {
-            float: right;
+        .button:hover{
+            background-color:rgb(205, 193, 193);
         }
+        .about-catering {
+  display: flex;
+  align-items: center;
+   padding: 10px;
+   margin-top: 20px;
+}
 
-        .about-catering, .menu-section {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            flex-wrap: wrap;
-        }
+.image-container {
+  flex: 1;
+  text-align: center;
+}
 
-        .image-container {
-            flex: 1;
-            text-align: center;
-            padding: 10px;
-        }
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
 
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-        }
+.content {
+  flex: 1;
+  padding: 20px;
+}
 
-        .content, .menu-content {
-            flex: 1;
-            padding: 20px;
-        }
+h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
 
-        h2 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
-        h4 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.image-container {
+    flex: 1;
+    text-align: center;
+}
 
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+.content {
+    padding:50px;
+    margin-left: -100px;
+}
 
-        .menu-content ul {
-            list-style: none;
-            padding: 0;
-        }
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
 
-        .menu-content ul li {
-            margin-bottom: 10px;
-        }
+p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.menu-section {
+    display: flex;
+    align-items: center;
+    padding: 20px; 
+}
 
-        .contact-form {
-            padding: 20px;
-        }
+.menu-content {
+    margin-left:120px;
+    padding:10px;
+}
 
-        .contact-form h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
+.menu-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ebe0e0;
-        }
+.menu-content ul {
+    list-style: none;
+    padding: 0;
+}
 
-        .contact-form button {
-            background-color: whitesmoke;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
+.menu-content ul li {
+    margin-bottom: 10px;
+}
 
-        a {
-            text-decoration: none;
-            color: black;
-        }
+.menu-image {
+    flex: 1;
+    text-align: center;
+}
 
-        @media screen and (max-width: 900px) {
+.menu-image img {
+    max-width: 120%;
+    height: auto;
+} 
+.contact-form {
+    padding: 20px;
+}
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ebe0e0;
+}
+
+.contact-form button {
+    background-color: whitesmoke;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+@media screen and (max-width: 900px) {
             .navbar a {
                 float: none;
                 display: block;
@@ -167,36 +222,42 @@
                 height: auto;
             }
         }
-    </style>
-</head>
+</style>
 <body>
-    <div class="navbar">
-        <a href="#home" style="float: left;"><b>GOURMET</b></a> 
-        <div class="main" style="float: right;">
-            <a href="#about">About</a>&nbsp;
-            <a href="#menu">Menu</a>&nbsp;
-            <a href="#contact">Contact</a>&nbsp;
+    <div class="top">
+        <div class="card">
+          <a href="#home" class="button" style="float: left;">Gourmet au Cater</a>
+          <div class="small" style="float:right">
+            <a href="#about" class="button">About</a>
+            <a href="#menu" class="button">Menu</a>
+            <a href="#contact" class="button">Contact</a>
+          </div>
         </div>
-    </div>
-    <div id="home">
-        <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="Hamburger Image">
+      </div>
+      <div class="home">
+        <h2 style="color: rgba(175, 184, 186, 0.767);">Le Catering</h2>
     </div>
     <section class="about-catering">
         <div class="image-container" id="about">
-            <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="Catering Image" height="400px" width="400px">
+            <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="Catering Image" height="400px" width="400px"> 
         </div>
         <div class="content">
             <h2>About Catering</h2>
             <p>Tradition since 1889</p>
-            <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. We only use seasonal ingredients.</p>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing   
+ elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   
+ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor   
+ in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. We only use seasonal ingredients.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id   
+ est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation   
+ ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </section> 
     <section class="menu-container">
         <div class="menu-section" id="menu">
             <div class="menu-content">
                 <h2>Our Menu</h2>
-                <ul>
+                <ul >
                     <li>
                         <h3>Bread Basket</h3>
                         <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
@@ -241,5 +302,5 @@
     <footer>
         <p style="text-align: center;">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
     </footer>
-</body>
+    </body>
 </html>
